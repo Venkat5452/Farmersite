@@ -36,7 +36,7 @@ function Fruits() {
     </div>
     )
     }*/
-    const [show, setShow] = useState(false);
+    const [show,setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true); 
@@ -49,14 +49,14 @@ function Fruits() {
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrq8qsj0_oyxFXDAGNvQyB8zZBlzErkUFJgg&usqp=CAU" className="w-100 h-75 rounded" alt=" "/>
             <div className="card-body" style={{backgroundColor:'lightcyan'}}>                       
                 <div className="card-title text-center text-danger mb-3"><h3>Water Melon</h3></div>
-                <button onClick={handleShow} className="btn d-block mx-auto" style={{backgroundColor: 'springgreen'}} >Click Here</button>
+                <button onClick={handleShow} value="1" className="btn d-block mx-auto" style={{backgroundColor: 'springgreen'}} >Click Here</button>
             </div>
         </div>
         <div className="card rounded p-2" style={{maxWidth: '450px'}}>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1Sva7NHEa4rWSAZxVkzMdie44KKRReCbhw&usqp=CAU" className="w-100 h-75 rounded" alt=" "/>
             <div className="card-body" style={{backgroundColor:'lightcyan'}}>                       
                 <div className="card-title text-center text-danger mb-3"><h3>Mango</h3></div>
-                <button className="btn  d-block mx-auto" onClick={handleShow} style={{backgroundColor: 'springgreen'}} data-bs-target="#m2" data-bs-toggle="modal">Click Here</button>
+                <button className="btn  d-block mx-auto"  style={{backgroundColor: 'springgreen'}} data-bs-target="#m2" data-bs-toggle="modal">Click Here</button>
             </div>
         </div>
         <div className="card rounded p-2" style={{maxWidth: '450px'}}>
@@ -139,8 +139,7 @@ function Fruits() {
       <Modal
         show={show}
         onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
+        centered
       >
         <Modal.Header closeButton>
           <Modal.Title>Crop Details</Modal.Title>
@@ -164,11 +163,11 @@ function Fruits() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
-            Understood
+            Got It!!!
           </Button>
         </Modal.Footer>
       </Modal>
-
+     
     </> 
     )
 }

@@ -21,7 +21,7 @@ function Home() {
         <p className="lead"><BsFlagFill/>A farmer works under the umbrella of agriculture, producing a variety of food products for human and animal consumption. There are several kinds of farmers, ranging from farmers who raise animals to farmers who grow crops.Farmers are responsible for all crops and livestock that are needed for us to survive. Without food, the world would slowly die, and farmers work hard every day to keep plenty of crops and animal products in the market to keep that from happening.A farmer has various responsibilities within their particular field. Whether it is the purchasing and planting of seeds on a cash crop farm, the purchasing of quality breeding stock on an animal husbandry farm, or the diet and care of a specific type of livestock on an animal production farm, a farmer needs to have a wide knowledge base of the agricultural industry as a whole.</p>
       </div>
       <div className="text-center p-2" style={{backgroundColor: 'darkgray'}}>
-        <p className="text-danger" style={{fontWeight:'600'}}>CONTACT DETAILS</p>
+        <p className="text-danger" style={{fontWeight:'600'}}>FOR ANY SUGGESTIONS AND QUERIES PLEASE CONTACT </p>
         <p><IoCall/> Phone : 9299967565</p>
         <p><IoMailOpen/> Email : farmers123@gmail.com</p>
       </div>  
